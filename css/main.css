@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    /* background: white; */
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+}
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* gap: 10px; */
+}
+
+.logo{
+    max-height: 60px;
+    
+}
+
+/* Navigation bar  */
+#main-nav {
+    position: sticky;
+    top: 0;
+
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 100%;
+    
+}
+
+nav{
+    justify-self: end;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    list-style: none;
+    margin-left: 5em;
+    /*align items left*/
+    
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-items: center;
+    /* text-align: center; */
+    /* align-items: left; */
+    padding: 0.5em;
+    /* border-radius: 5px; */
+    /* background: #377EFF; */
+    color: blue
+    
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 1rem; */
+    /* padding: 1rem; */
+    /* background: #377EFF; */
+    color: maroon;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ------------------------------------------- */
+/* hero content */
+
+#hero {
+    display: grid;
+    background-image: url("../images/far_gate.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color:aquamarine;
+    /* background-blend-mode: multiply; */
+}
+
+.hero-container {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 1em 1em;
+    width: 55%;
+    background: rgb(0, 0, 0, 0.2)
+}
+
+/* --------------------------------------------------------------- */
