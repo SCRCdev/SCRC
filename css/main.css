@@ -4,9 +4,10 @@
 html,
 body {
     /* background: white; */
-    margin: 0;
+    /* margin: 0; */
     height: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     
 }
 
@@ -19,13 +20,16 @@ header,
 footer {
     grid-column-start: 1;
     grid-column-end: 4;
+    position: sticky;
+    top: 0px;
+    background: rgb(233,100,67);
+    background: radial-gradient(circle, rgba(233,100,67,1) 0%, rgba(254,200,77,1) 100%); 
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
 
-    /* gap: 10px; */
 }
 
 .logo{
@@ -33,64 +37,45 @@ main {
     
 }
 
-/* Navigation bar  */
-#main-nav {
-    position: sticky;
-    top: 0;
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    /* margin: 0.5em 0; */
+}
+
+.custom-link{
+    color: white;
+}
+
+
+.custom-link:hover{
+    color: rgb(212, 36, 36);
+}
+
+.btn-primary{
+    background-color: #cf2550;
+    border-color: rgb(178, 34, 34);
+}
+
+.custom-text-primary{
+    color: rgb(178, 34, 34);
 
 }
 
-.nav-container {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    width: 100%;
-    
-}
-
-nav{
-    justify-self: end;
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(6, max-content);
-    list-style: none;
-    margin-left: 5em;
-    /*align items left*/
-    
-}
-
-nav ul a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    justify-items: center;
-    /* text-align: center; */
-    /* align-items: left; */
-    padding: 0.5em;
-    /* border-radius: 5px; */
-    /* background: #377EFF; */
-    color: blue
-    
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-gap: 1rem; */
-    /* padding: 1rem; */
-    /* background: #377EFF; */
-    color: maroon;
-    justify-items: center;
-    align-items: center;
-}
-
-/* ------------------------------------------- */
+.btn-primary:hover {
+    background-color: rgb(233,100,67);
+    border-color: orange
+  }
+  
+  header{
+    z-index: 2;
+  }
+/* ------------------------------------------#117272 */
 /* hero content */
 
 #hero {
     display: grid;
-    background-image: url("../images/far_gate.jpg");
+    background-image: url("../images/opt_far_gate.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
