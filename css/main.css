@@ -50,6 +50,7 @@ p {
 
 .custom-link:hover{
     color: rgb(212, 36, 36);
+    border: solid rgb(233,100,67);
 }
 
 .btn-primary{
