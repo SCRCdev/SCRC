@@ -51,6 +51,7 @@ p {
 .custom-link:hover{
     color: rgb(212, 36, 36);
     border: solid rgb(233,100,67);
+    
 }
 
 .btn-primary{
@@ -65,7 +66,8 @@ p {
 
 .btn-primary:hover {
     background-color: rgb(233,100,67);
-    border-color: orange
+    border-color: orange;
+    
   }
   
   header{
@@ -100,3 +102,4 @@ p {
 }
 
 /* --------------------------------------------------------------- */
+
